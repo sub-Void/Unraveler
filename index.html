@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<title>Unraveler II v0.X</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/unraveler.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/unraveler.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Nunito+Sans|Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+	<div id="outContainer">
+		<div id="reader" class="glows">
+			<span id="outputArea" class="plasmaText">Unraveler 📚</span>
+		</div>
+	</div>
+
+	<div id="buttons">
+		<button id="startButton" class="active" onclick="letsGo()">Start</button>
+		<button id="stopButton" class="inactive">Stop</button>
+		<button id="clearButton" class="active" onclick="clearText()">Clear</button>
+	</div>
+	<div id="slider">
+		<span>Delay</span>
+		<input id="speed" type="range" min="0.1" max="2" step="0.05">
+		<span>[</span>
+		<input type="checkbox" id="plasmaToggle" name="plasmaToggle" onclick="togglePlasmaText()" checked>
+		<input type="checkbox" id="glowToggle" name="glowToggle" onclick="toggleGlow()" checked>
+		<span>]</span>
+	</div>
+	<div id="textContainer">
+		<div id="inputArea">
+			<textarea id="textBox" rows="8"
+				cols="68">Welcome. Unraveler is a simple, but effective speed reading trainer.</textarea>
+		</div>
+	</div>
+</body>
+
+</html>
